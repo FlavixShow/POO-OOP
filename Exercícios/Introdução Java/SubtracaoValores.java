@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex1 {
+public class SubtracaoValores {
 	public static void main (String[] args){
 		Scanner scan = new Scanner(System.in);
 		System.out.print("Digite o primeiro número: ");

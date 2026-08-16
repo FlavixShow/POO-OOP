@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex2 {
+public class FaixaValor {
 	public static void main(String[] args) {
 		System.out.print("Digite um número: ");
 		Scanner scan = new Scanner(System.in);

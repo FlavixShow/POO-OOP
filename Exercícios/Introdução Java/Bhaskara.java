@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex3 {
+public class Bhaskara {
 	public static void main (String[] args){
 		Scanner scan = new Scanner(System.in);
 		System.out.println("CÁLCULO de DELTA\n");
