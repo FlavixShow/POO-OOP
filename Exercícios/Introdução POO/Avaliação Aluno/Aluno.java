@@ -6,10 +6,10 @@ public class Aluno{
 		return (nota1+nota2)/2;
 	}
 	
-	public String resultado(double media){
+	public String resultado(){
 		String resultado;
 		
-		if(media >= 6){
+		if(media() >= 6){
 			resultado = "APROVADO";
 		}else{
 			resultado = "REPROVADO";
