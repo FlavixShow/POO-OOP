@@ -23,8 +23,6 @@ public class Turma{
 		
 		for(int i = 0; i < 2; i++){	
 			System.out.println(aluno[i].resultado(aluno[i].media()) + " Média: " + aluno[i].media());
-
 		}
-		
 	}
 }
