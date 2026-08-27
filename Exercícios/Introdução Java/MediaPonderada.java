@@ -29,7 +29,7 @@ public class MediaPonderada{
 		
 		media = ((trabLab*2)+(avalSem*3)+(examFin*5))/(2+3+5);
 		
-		5System.out.print("Média: " + media + " | Conceito: ");
+		System.out.print("Média: " + media + " | Conceito: ");
 		
 		if(media >= 8 && media <= 10){
 			System.out.print("A");
