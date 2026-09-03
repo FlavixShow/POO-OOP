@@ -20,7 +20,7 @@ public class Pessoa{
 	
 	public String mostraIdade(){
 		int idade = 2018 - anoDeNascimento;
-		if(mesDeNascimento < 10){
+		if(mesDeNascimento > 10){
 			idade--;
 		}
 		return "Nome: " + nome + " | Sexo: " + sexo + "Idade: " + idade;
@@ -28,7 +28,7 @@ public class Pessoa{
 	
 	public String mostraIdade(int mes, int ano){
 		int idade = ano - anoDeNascimento;
-		if(mesDeNascimento < mes){
+		if(mesDeNascimento > mes){
 			idade--;
 		}
 		return "Nome: " + nome + " | Sexo: " + sexo + "Idade: " + idade;
