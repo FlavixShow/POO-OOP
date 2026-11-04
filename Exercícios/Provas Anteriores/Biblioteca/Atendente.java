@@ -16,7 +16,7 @@ public class Atendente extends Funcionario{
 	public Double calculaSalario(){
 		Double salario = getSalario();
 		
-		if(turno.equals("NOITE")){
+		if(turno.equalsIgnoreCase("NOITE")){
 			salario *= 1.2;
 		}
 		return salario * 0.9;
@@ -26,7 +26,7 @@ public class Atendente extends Funcionario{
 		return turno;
 	}
 	public void setTurno(String turno){
-		if(turno.equals("MANHA") || turno.equals("NOITE")){
+		if(turno.equalsIgnoreCase("MANHA") || turno.equalsIgnoreCase("NOITE")){
 			this.turno = turno;
 		}else{
 			this.turno = "";

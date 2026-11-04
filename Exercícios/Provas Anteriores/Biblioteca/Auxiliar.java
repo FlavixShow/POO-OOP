@@ -13,10 +13,10 @@ public class Auxiliar extends Funcionario{
 	@Override
 	public Double calculaSalario(){
 		Double salario = getSalario();
-		if(setor.equals("ACERVO")){
+		if(setor.equalsIgnoreCase("ACERVO")){
 			salario *= 1.15;
 		}
-		if(setor.equals("LIMPEZA")){
+		if(setor.equalsIgnoreCase("LIMPEZA")){
 			salario *= 1.05;
 		}
 		return salario * 0.9;
@@ -26,7 +26,7 @@ public class Auxiliar extends Funcionario{
 		return setor;
 	}
 	public void setSetor(String setor){
-		if(setor.equals("ACERVO") || setor.equals("LIMPEZA")){
+		if(setor.equalsIgnoreCase("ACERVO") || setor.equalsIgnoreCase("LIMPEZA")){
 			this.setor = setor;
 		}else{
 			this.setor = "";

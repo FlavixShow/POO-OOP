@@ -13,21 +13,21 @@ public class Bibliotecario extends Funcionario{
 	
 	@Override
 	public Double calculaSalario(){
-		Double salario = getSalario();
-		if(cargo.equals("SENIOR")){
-			salario *= 1.3;
+		Double salarioC = this.getSalario();
+		if(cargo.equalsIgnoreCase("SENIOR")){
+			salarioC *= 1.3;
 		}
-		if(cargo.equals("JUNIOR")){
-			salario *= 1.1;
+		if(cargo.equalsIgnoreCase("JUNIOR")){
+			salarioC *= 1.1;
 		}
-		return salario * 0.9;
+		return salarioC * 0.9;
 	}
 	
 	public String getCargo(){
 		return cargo;
 	}
 	public void setCargo(String cargo){
-		if(cargo.equals("JUNIOR") || cargo.equals("SENIOR")){
+		if(cargo.equalsIgnoreCase("JUNIOR") || cargo.equalsIgnoreCase("SENIOR")){
 			this.cargo = cargo;
 		}else{
 			this.cargo = "";
